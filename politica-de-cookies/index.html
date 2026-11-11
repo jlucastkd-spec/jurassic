@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c0a" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>Política de Cookies · Jurassic Trail</title>
+    <meta name="description" content="O site da Jurassic Trail não usa cookies de rastreamento. Saiba o que é guardado no seu navegador." />
+    <link rel="canonical" href="https://jurassictrail.com.br/politica-de-cookies/" />
+    <link rel="icon" type="image/png" href="../favicon.png" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+    <link rel="stylesheet" href="../assets/legal.css" />
+  </head>
+  <body>
+    <header class="lg-header">
+      <a href="../" aria-label="Jurassic Trail — voltar ao início"><img src="../brand/logo-160.webp" width="160" height="152" alt="Jurassic Trail" /></a>
+      <a class="lg-back" href="../">← Voltar ao site</a>
+    </header>
+    <main class="lg-main">
+      <p class="lg-eyebrow">Privacidade · Cookies</p>
+      <h1>Política de <span>Cookies</span></h1>
+      <p class="lg-updated">Última atualização: 11 de novembro de 2026</p>
+
+      <div class="lg-box"><p>Em resumo: <strong>o site da Jurassic Trail não usa cookies.</strong> Não usamos Google Analytics, Facebook Pixel nem nenhuma outra ferramenta de rastreamento ou publicidade. As fontes e imagens são carregadas do próprio site, sem serviços de terceiros.</p></div>
+
+      <h2>1. O que são cookies</h2>
+      <p>Cookies e tecnologias parecidas, como o armazenamento local do navegador, são pequenos registros que um site guarda no seu dispositivo para lembrar informações entre uma visita e outra.</p>
+
+      <h2>2. O que este site guarda no seu navegador</h2>
+      <div class="lg-table-wrap"><table>
+        <thead><tr><th>Nome</th><th>Tipo</th><th>Para que serve</th><th>Duração</th></tr></thead>
+        <tbody>
+          <tr><td>jt-consent-v1</td><td>Armazenamento local (essencial)</td><td>Lembra a sua escolha no aviso de privacidade, para ele não aparecer de novo a cada visita. Não identifica você e não é enviado a ninguém.</td><td>Até você limpar os dados do navegador ou rever a escolha</td></tr>
+        </tbody>
+      </table></div>
+      <p>Como esse registro é necessário para o próprio aviso funcionar, ele é considerado essencial.</p>
+
+      <h2>3. Sites de terceiros</h2>
+      <p>Os botões de WhatsApp e Instagram levam você para fora do nosso site. Ao abrir esses serviços, eles podem usar os próprios cookies, conforme as políticas de privacidade da Meta.</p>
+
+      <h2>4. Se no futuro usarmos outras ferramentas</h2>
+      <p>Se um dia adicionarmos ferramentas de medição de audiência ou marketing, elas só serão ativadas para quem clicar em “Aceitar” no aviso, e esta página será atualizada antes disso. Quem escolher “Somente essenciais” continuará navegando normalmente.</p>
+
+      <h2>5. Como rever sua escolha</h2>
+      <p>Você pode rever sua escolha a qualquer momento pelo link “Preferências de cookies” no rodapé do site, pelo botão abaixo, ou limpando os dados de navegação do seu navegador.</p>
+      <p><button type="button" class="lg-btn" id="jt-reset">Rever minha escolha</button> <span id="jt-reset-msg" role="status" style="margin-left:12px;color:var(--ash);font-size:.85rem"></span></p>
+
+      <p>Dúvidas? Fale com a gente pelo WhatsApp <a href="https://wa.me/5524981080729" target="_blank" rel="noopener noreferrer">(24) 98108-0729</a> ou Instagram <a href="https://www.instagram.com/jurassic.trail/" target="_blank" rel="noopener noreferrer">@jurassic.trail</a>. Veja também a <a href="../politica-de-privacidade/">Política de Privacidade</a>.</p>
+    </main>
+    <footer class="lg-footer">
+      <p>© 2026 Jurassic Trail · Miguel Pereira – RJ · CNPJ 62.264.795/0001-00 ·
+        <a href="../politica-de-privacidade/">Privacidade</a> · <a href="../politica-de-cookies/">Cookies</a> · <a href="../termos-de-uso/">Termos de uso</a></p>
+    </footer>
+    <script>
+      document.getElementById('jt-reset').addEventListener('click', function () {
+        try { localStorage.removeItem('jt-consent-v1'); } catch (e) {}
+        document.getElementById('jt-reset-msg').textContent = 'Pronto! O aviso aparecerá de novo na próxima vez que você abrir o site.';
+      });
+    </script>
+  </body>
+</html>

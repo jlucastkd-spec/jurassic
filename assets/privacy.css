@@ -1,0 +1,66 @@
+/* Jurassic Trail — elementos de privacidade (LGPD).
+   Isolado do restante do site: usa apenas as cores e fontes já existentes. */
+.jt-consent {
+  position: fixed;
+  left: 16px;
+  right: 88px; /* deixa livre o botão flutuante do WhatsApp */
+  bottom: 20px;
+  z-index: 60;
+  max-width: 440px;
+  padding: 18px 20px;
+  border: 1px solid rgba(245, 241, 230, 0.12);
+  border-radius: 2px;
+  background: rgba(11, 12, 10, 0.92);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6);
+  color: #f5f1e6;
+  font-family: "Inter Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.55;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.jt-consent.is-visible { opacity: 1; transform: none; }
+.jt-consent__eyebrow {
+  margin: 0 0 6px;
+  color: #fcc80b;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+.jt-consent__text { margin: 0; color: rgba(245, 241, 230, 0.75); }
+.jt-consent__text a,
+.jt-legal-links a { color: inherit; text-decoration: underline; text-underline-offset: 3px; transition: color 0.3s; }
+.jt-consent__text a:hover,
+.jt-legal-links a:hover { color: #fcc80b; }
+.jt-consent__actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.jt-consent__btn {
+  min-height: 40px;
+  padding: 0 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(245, 241, 230, 0.3);
+  background: transparent;
+  color: #f5f1e6;
+  font: inherit;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s, border-color 0.4s;
+}
+.jt-consent__btn:hover { border-color: #fcc80b; color: #fcc80b; }
+.jt-consent__btn--primary { background: #fcc80b; border-color: #fcc80b; color: #0b0c0a; }
+.jt-consent__btn--primary:hover { background: #f5f1e6; border-color: #f5f1e6; color: #0b0c0a; }
+.jt-consent__btn:focus-visible,
+.jt-consent__text a:focus-visible,
+.jt-legal-links a:focus-visible { outline: 2px solid #fcc80b; outline-offset: 3px; }
+@media (min-width: 768px) {
+  .jt-consent { left: 40px; right: auto; bottom: 32px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .jt-consent { transition: none; transform: none; }
+}
